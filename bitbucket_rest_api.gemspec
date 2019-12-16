@@ -3,12 +3,12 @@ $:.push File.expand_path("../lib", __FILE__)
 require File.expand_path('../lib/bitbucket_rest_api/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.name          = 'bitbucket_rest_api'
-  gem.authors       = [ "Mike Cochran" ]
-  gem.email         = "mcochran@linux.com"
-  gem.homepage      = 'https://github.com/vongrippen/bitbucket'
-  gem.summary       = %q{ Ruby wrapper for the BitBucket API supporting OAuth and Basic Authentication }
-  gem.description   = %q{ Ruby wrapper for the BitBucket API supporting OAuth and Basic Authentication }
+  gem.name          = 'zz_bitbucket_rest_api'
+  gem.authors       = [ "Zulhilmi Zainudin" ]
+  gem.email         = "zulhfreelancer@gmail.com"
+  gem.homepage      = 'https://github.com/zulhfreelancer/bitbucket'
+  gem.summary       = %q{ Ruby wrapper for the BitBucket API supporting OAuth and Basic Authentication. This is forked version of https://github.com/bitbucket-rest-api/bitbucket project. }
+  gem.description   = %q{ Ruby wrapper for the BitBucket API supporting OAuth and Basic Authentication. This is forked version of https://github.com/bitbucket-rest-api/bitbucket project. }
   gem.version       = BitBucket::VERSION::STRING.dup
   gem.license       = "MIT"
 
