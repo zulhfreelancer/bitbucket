@@ -8,7 +8,9 @@ module BitBucket
       _validate_presence_of emailaddress
       perm ||= "write"
 
-      post_request("/2.0/invitations/#{user}/#{repo.downcase}/#{emailaddress}",
+      # Force using 1.0, because it is still available:
+      # https://support.atlassian.com/bitbucket-cloud/docs/use-bitbucket-rest-api-version-1/
+      post_request("/1.0/invitations/#{user}/#{repo.downcase}/#{emailaddress}",
                    permission: perm)
     end
   end
